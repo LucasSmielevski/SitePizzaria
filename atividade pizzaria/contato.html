@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria do Zé</title>
+    <link rel="stylesheet" href="contatostyle.css">
+    <!– Bootstrap CSS –>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="titulo">
+            <img class="imagemcima" src="img/webpizzaria.png" alt="logo pizzaria" width="200px" height="50px">
+            <p class="text-capitalize">Entre em Contato</p>
+            <nav class="navbar navbar-expand-lg bg-body-danger ">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler bg-danger" data-bs-toggle="collapse" data-bs-target="#navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbar">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item shadow-sm">
+                                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item shadow-sm">
+                                <a class="nav-link" href="produtos.html">Produtos</a>
+                            </li>
+                            <li class="nav-item shadow-sm">
+                                <a class="nav-link" href="contato.html">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </h1>
+    </header>
+    <div class="container mt-3 container-sm" style="background-color: rgb(197, 197, 197);">
+        <form class=" row g-1 was-validated">
+            <div class="form-floating mb-3">
+                <input type="text" id="validationDefault01" class="form-control" placeholder="name" required>
+                <label for="validationDefault01" class="form-floating">Nome</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="email" id="email" class="form-control" placeholder="name@example.com" required>
+                <label for="email" class="form-floating">Email</label>
+            </div>
+
+
+            <div class="form-floating mb-3">
+                <input type="tel" id="validationDefault01" class="form-control" placeholder="name" required>
+                <label for="validationDefault01" class="form-floating">Número</label>
+            </div>
+
+
+            <div class="form-floating mb-3">
+                <textarea type="text" id="validationDefault01" class="form-control" placeholder="name" rows="4"
+                    required></textarea>
+                <label for="validationDefault01" class="form-floating">Mensagem</label>
+            </div>
+
+
+            <div class="mb-3">
+                <p>Como prefere nosso contato?</p>
+                <div class="form-check">
+                    <input type="radio" name="contactPreference" id="emailOption" class="form-check-input" value="email"
+                        checked>
+                    <label for="emailOption" class="form-check-label">E-mail</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="contactPreference" id="phoneOption" class="form-check-input"
+                        value="phone">
+                    <label for="phoneOption" class="form-check-label">Telefone</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="contactPreference" id="whatsappOption" class="form-check-input"
+                        value="Whatsapp">
+                    <label for="whatsappOption" class="form-check-label">Whatsapp</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <div class="form-check">
+                    <input type="checkbox" name="receiveNews" id="receiveNews" class="form-check-input" value="yes">
+                    <label for="receiveNews" class="form-check-label">Gostaria de receber nossas novidades por
+                        email?</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <p>Qual horário prefere ser atendido?</p>
+                <select name="preferredTime" class="form-select">
+                    <option value="manhã">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+            </div>
+
+            <div class="mb-3 text-center">
+                <button type="submit" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#example"
+                    style="width: 150px;">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <img class="logofim" src="C:\Users\aluno\Desktop\Web1 202\img\logo-branco.png" alt="Logo pizzaria" width="140px"
+            height="40px">
+        <p>&copy; 2023 Pizzaria Saborosa. Todos os direitos reservados.</p>
+    </footer>
+
+    <!– Bootstrap JavaScript –>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.titulo nav {
+    font-size: medium;
+    margin-left: 100px;
+}
+
+.home {
+    color: black;
+    margin-left: 15px;
+}
+
+.produtos {
+    margin-left: 15px;
+    color: black;
+}
+
+.contato {
+    margin-left: 15px;
+    color: black;
+}
+
+
+.header {
+    font-size: medium;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: red;
+}
+
+.titulo {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.titulo p {
+    margin-left: 150px;
+    text-align: center;
+}
+
+.titulo img {
+    width: 200px;
+    height: 80px;
+    margin-left: 50px;
+}
+
+.navbar {
+    left: -40px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+.contact-form select {
+    margin-top: -50px;
+    width: 15%;
+    padding: 2px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.footer {
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.footer.imagemfim {
+    text-align: center;
+}
+
+.btn{
+    text-align: center;
+}   
+
