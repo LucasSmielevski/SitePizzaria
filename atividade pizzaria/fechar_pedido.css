@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c53c3c;
+    color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #141414;
+}
+
+.detalhes-pedido {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: dashed black;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 20%;
+}
+
+/* Estilo para o container dos campos */
+.frm-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Estilo para os campos de entrada */
+.frm-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Estilo para os rótulos */
+.frm-group label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8px;
+    pointer-events: none;
+    color: #777;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+}
+
+.voltar {
+    margin-top: 20px;
+    border-radius: 25px;
+    border-color: #f3f3f3;
+    background-color: springgreen;
+    width: 200px;
+    margin-bottom: 35px;
+}
+
+.voltar:hover {
+    transform: scale(1.1);
+    transition-duration: .6s;
+}
+
+.voltarP {
+    margin-top: 20px;
+    border-radius: 25px;
+    border-color: #000000;
+    background-color: rgb(230, 24, 17);
+    width: 200px;
+    margin-bottom: 35px;
+    margin-left: 20px;
+}
+
+.voltarP:hover {
+    transform: scale(1.1);
+    transition-duration: .6s;
+}
+
+.footer {
+    width: 100%;
+    height: 25%;
+    background-color: springgreen;
+    align-items: center;
+    /* Alinha verticalmente */
+    justify-content: center;
+    /* Alinha horizontalmente */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+}
+
+.footer.imagemfim {
+    text-align: center;
+}
+
+.footer img {
+    margin-bottom: -25px;
+    margin-top: 10px;
+}

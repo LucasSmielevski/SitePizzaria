@@ -18,7 +18,7 @@ body {
     border-bottom: 1px solid #ddd;
     width: 100%;
     box-sizing: border-box;
-    background-color: red;
+    background-color: tomato;
 }
 
 .titulo img {
@@ -62,37 +62,72 @@ body {
 
 }
 
+.carda{ 
+    margin-bottom: 20px;
+}
+
 .card,
 .move {
     animation-duration: 1.5s;
     animation-name: slidein;
-  }
-  
-  @keyframes slidein{
+}
+
+@keyframes slidein {
     from {
-      margin-bottom: 100%;
-      width: 400%;
+        margin-bottom: 100%;
+        width: 400%;
     }
-  
+
     to {
-      margin-left: 0%;
-      width: 100%;
+        margin-left: 0%;
+        width: 100%;
     }
-  }
+}
 
+.preco{
+    margin-bottom: 15px;
+}
 
-.card:hover{
-    transform: scale(1.1);
+.botao{
+    margin-top: 10px;
+}
+
+.fechar{
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: springgreen;
+    height: 40px;
+}
+
+.fechar:hover{
+    transform: scale(1.2);
     transition-duration: .5s;
 }
 
+.quants{
+    border-radius: 10px;
+    border-color: rgb(22, 22, 22);
+    box-shadow: 2px 2px 2px 0.5px rgb(59, 59, 59);
+    width: 50%;
+    margin-left: 55px;
+}
+
+.quants:focus{
+    outline: tomato;
+    box-shadow: 2px 2px 2px 0.5px rgb(59, 59, 59);
+}
+
 .footer {
-    background-color: burlywood;
+    z-index: -1;
+    background-color: tomato;
     color: #fff;
     text-align: center;
     padding: 20px;
-    margin-bottom: 0;
-    margin-top: 10px;
+    width: 100%;
+    top: 26px;    
+    position: relative;
+    bottom: 0px;
+    box-sizing: border-box;
 }
 
 .footer.imagemfim {
