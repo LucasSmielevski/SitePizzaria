@@ -1,47 +1,90 @@
 body {
-
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: springgreen;
 }
 
 .titulo nav {
     font-size: medium;
-    margin-left: 100px;
 }
 
-.header {
-    font-size: medium;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: tomato;
-}
-
-.titulo {
-    text-align: center;
+header {
     display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.titulo p {
-    margin-left: 100px;
-    text-align: center;
-}
-
-.navbar{
-    left: -40px;
+    background-color: tomato;
+    height: 20vh;
+    width: 100%;
+    padding: 0 20px;
+    /* Espaçamento interno */
+    box-sizing: border-box;
+    /* Inclui padding e borda na largura total */
 }
 
 
 .titulo img {
-    width: 200px;
-    height: 80px;
-    margin-left: 50px;
+    max-width: 70%;
+    /* Define a largura máxima da imagem */
+    margin-bottom: 0;
+    /* Ajusta o espaçamento inferior da imagem */
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar {
+    display: flex;
+    width: 20%;
+    /* Ocupa a largura total do container */
+    background-color: transparent;
+    margin-left: -30px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 2px;
+    /* Espaçamento entre os itens */
+}
+
+.navbar-nav .nav-item a {
+    color: rgba(168, 168, 168, 0.527);
+    /* Cor do texto */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    /* Sombra no texto ao passar o mouse */
+    padding: 10px 15px;
+    /* Espaçamento interno */
+    border-radius: 5px;
+    /* Borda arredondada */
+}
+
+.navbar-nav .nav-item a:hover {
+    text-shadow: 0 10px 4px rgba(0, 0, 0, 0.4);
+    /* Sombra no texto ao passar o mouse */
+    color: rgb(255, 255, 255);
+    transition: text-shadow 0.2s ease;
+    /* Transição suave ao passar o mouse */
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 100%; /* Ocupa toda a largura disponível */
+        justify-content: center; /* Centraliza os itens */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 3px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .navbar-nav .nav-item a {
+        padding: 8px 12px; /* Diminui o padding dos links */
+    }
 }
 
 .main {
-    background-color:springgreen;
+    background-color: springgreen;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,41 +93,40 @@ body {
 }
 
 .text-block,
-.carrosel,
-.titulo {
+.carrosel {
     animation-duration: 1.8s;
     animation-name: slidein;
-  }
-  
-  @keyframes slidein{
+}
+
+@keyframes slidein {
     from {
-      margin-left: 100%;
-      width: 300%;
+        margin-left: 100%;
+        width: 300%;
     }
-  
+
     to {
-      margin-left: 0%;
-      width: 100%;
+        margin-left: 0%;
+        width: 100%;
     }
-  }
+}
 
 .section {
     display: flex;
     width: 80%;
 }
 
-.container{
+.container {
     align-items: center;
 }
 
-.carousel-item{
+.carousel-item {
     margin-top: 5px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.carousel-inner{
+.carousel-inner {
     height: 20em;
 }
 
@@ -108,11 +150,11 @@ body {
     margin-left: 20px;
     border-radius: 25px;
     margin-bottom: 5px;
-    background-color:tomato;
+    background-color: tomato;
     /* Fundo cinza mais claro para a segunda seção de texto */
 }
 
-.botao{
+.botao {
     height: 40px;
     width: 100px;
     background-color: transparent;
@@ -128,36 +170,38 @@ body {
     border-style: hidden;
 }
 
-.botao:after{
+.botao:after {
     position: absolute;
     content: "";
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background:green;
+    background: green;
     transition: all .35s;
     border-radius: 25px;
-  }
+}
 
-  .botao{
-    box-shadow: 5px 5px 5px 2px black;
-  }
+.botao {
+    box-shadow: 3px 3px 5px 2px black;
+}
 
-  .botao span{
+.botao span {
     position: relative;
     z-index: 2;
-  }
-  
-  .botao:hover{
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+.botao:hover {
     color: black;
-    transform: scale(1.3);
+    transform: scale(1.2);
     transition-duration: 0.5s;
-  }
-  
-  .botao:hover:after{
+}
+
+.botao:hover:after {
     width: 100%;
-  }
+}
 
 .footer {
     background-color: tomato;
