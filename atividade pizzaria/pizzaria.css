@@ -23,7 +23,6 @@ header {
 
 
 .titulo img {
-    max-width: 70%;
     /* Define a largura máxima da imagem */
     margin-bottom: 0;
     /* Ajusta o espaçamento inferior da imagem */
@@ -38,6 +37,7 @@ header {
 
 .titulo p {
     margin-left: 50px;
+    margin-top: 15px;
 }
 
 .navbar {

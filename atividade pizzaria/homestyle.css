@@ -23,24 +23,29 @@ header {
 
 
 .titulo img {
-    max-width: 70%;
-    /* Define a largura máxima da imagem */
     margin-bottom: 0;
     /* Ajusta o espaçamento inferior da imagem */
+    display: flex;
 }
 
+
 .titulo {
+    text-align: center;
     display: flex;
     align-items: center;
 }
 
+.titulo p {
+    margin-left: 50px;
+    margin-top: 15px;
+}
 
 .navbar {
     display: flex;
     width: 20%;
     /* Ocupa a largura total do container */
     background-color: transparent;
-    margin-left: -30px;
+    margin-left: 50px;
 }
 
 .navbar-nav .nav-item {
@@ -70,18 +75,24 @@ header {
 
 @media screen and (max-width: 768px) {
     .navbar {
-        width: 100%; /* Ocupa toda a largura disponível */
-        justify-content: center; /* Centraliza os itens */
+        width: 100%;
+        /* Ocupa toda a largura disponível */
+        justify-content: center;
+        /* Centraliza os itens */
     }
 
     .navbar-nav .nav-item {
-        margin: 0 3px; /* Reduz o espaçamento entre os itens */
+        margin: 0 3px;
+        /* Reduz o espaçamento entre os itens */
     }
 
     .navbar-nav .nav-item a {
-        padding: 8px 12px; /* Diminui o padding dos links */
+        padding: 8px 12px;
+        /* Diminui o padding dos links */
+        margin-left: -20px;
     }
 }
+
 
 .main {
     background-color: springgreen;
