@@ -66,6 +66,7 @@ input[type="text"] {
     background-color: springgreen;
     width: 40%;
     margin-bottom: 35px;
+    color: black;
 }
 
 .voltar:hover {
@@ -81,6 +82,7 @@ input[type="text"] {
     width: 40%;
     margin-bottom: 35px;
     margin-left: 20px;
+    color: black;
 }
 
 .voltarP:hover {

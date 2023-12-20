@@ -17,7 +17,8 @@
     <body>
         <header class="header">
             <h1 class="titulo">
-                <img class="imagemcima" src="img/Br_Shoes-removebg-preview.png" alt="logo pizzaria" width="120px" height="120px">
+                <img class="imagemcima" src="img/Br_Shoes-removebg-preview.png" alt="logo pizzaria" width="120px"
+                    height="120px">
                 <p>Faça o seu Pedido</p>
                 <nav class="navbar navbar-expand-lg   ">
                     <div class="container-fluid">
@@ -55,10 +56,28 @@
                             <p class="card-text">Deliciosa pizza individual com
                                 cobertura generosa.
                             </p>
+                            <div class="d-flex flex-column">
+                                <label class="radio-label">
+                                    <input type="radio" id="frango" name="saborPizza">
+                                    Frango com Catupiry
+                                </label>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label class="radio-label">
+                                    <input type="radio" id="calabresa" name="saborPizza">
+                                    Calabresa
+                                </label>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label class="radio-label">
+                                    <input type="radio" id="4queijos" name="saborPizza">
+                                    4 Queijos
+                                </label>
+                            </div>
                             <h5 class="preco">R$35,00</h5>
                             <div class="d-flex flex-column">
                                 <label for="quantidadePequena">Quantidade:</label>
-                                <input type="number" id="quantidadePequena" name="quantidadePequena" value="0" min="0"
+                                <input type="number" id="quantidade" name="quantidadePequena" value="0" min="0"
                                     max="200" class="quants ">
                             </div>
                         </div>
@@ -122,6 +141,12 @@
 
                 </script>
             <script>
+
+                const campo = document.getElementById('quantidade');
+
+                campo.addEventListener('focus', function () {
+                    this.select();
+                });
 
                 document.getElementById('fecharPedidoLink').addEventListener('click', function () {
                     // Obtenção das quantidades e preços das pizzas

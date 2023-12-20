@@ -1,13 +1,97 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
 }
-
 
 .titulo nav {
     font-size: medium;
-    margin-left: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    height: 20vh;
+    width: 100%;
+    padding: 0 20px;
+    /* Espaçamento interno */
+    box-sizing: border-box;
+    /* Inclui padding e borda na largura total */
+}
+
+.titulo nav {
+    font-size: medium;
+}
+
+.titulo img {
+    margin-bottom: 0;
+    /* Ajusta o espaçamento inferior da imagem */
+    display: flex;
+}
+
+.titulo {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.titulo p {
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.navbar {
+    display: flex;
+    width: 20%;
+    /* Ocupa a largura total do container */
+    background-color: transparent;
+    margin-left: 50px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 2px;
+    /* Espaçamento entre os itens */
+}
+
+.navbar-nav .nav-item a {
+    color: rgba(168, 168, 168, 0.527);
+    /* Cor do texto */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    /* Sombra no texto ao passar o mouse */
+    padding: 10px 15px;
+    /* Espaçamento interno */
+    border-radius: 5px;
+    /* Borda arredondada */
+}
+
+.navbar-nav .nav-item a:hover {
+    text-shadow: 0 10px 4px rgba(0, 0, 0, 0.4);
+    /* Sombra no texto ao passar o mouse */
+    color: rgb(255, 255, 255);
+    transition: text-shadow 0.2s ease;
+    /* Transição suave ao passar o mouse */
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        /* Ocupa toda a largura disponível */
+        justify-content: center;
+        /* Centraliza os itens */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 3px;
+        /* Reduz o espaçamento entre os itens */
+    }
+
+    .navbar-nav .nav-item a {
+        padding: 8px 12px;
+        /* Diminui o padding dos links */
+        margin-left: -20px;
+    }
 }
 
 .home {
@@ -25,37 +109,6 @@ body {
     color: black;
 }
 
-
-.header {
-    font-size: medium;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: red;
-}
-
-.titulo {
-    text-align: center;
-    display: flex;
-    align-items: center;
-}
-
-.titulo p {
-    margin-left: 150px;
-    text-align: center;
-}
-
-.titulo img {
-    width: 200px;
-    height: 80px;
-    margin-left: 50px;
-}
-
-.navbar {
-    left: -40px;
-}
-
 .container {
     max-width: 600px;
     margin: 0 auto;
@@ -66,12 +119,6 @@ body {
     margin-top: 6px;
 }
 
-
-h1 {
-    text-align: center;
-}
-
-
 .contact-form select {
     margin-top: -50px;
     width: 15%;
@@ -81,11 +128,12 @@ h1 {
 }
 
 .footer {
-    background-color: red;
+    background-color: tomato;
     color: #fff;
     text-align: center;
     padding: 20px;
     width: 100%;
+    margin-top: 10px;
     position: relative;
     bottom: 0;
     box-sizing: border-box;
@@ -95,7 +143,6 @@ h1 {
     text-align: center;
 }
 
-.btn{
+.btn {
     text-align: center;
-}   
-
+}
