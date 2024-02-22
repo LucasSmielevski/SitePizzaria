@@ -139,19 +139,28 @@ header {
 .radio-label {
     display: flex;
     align-items: center;
-    margin-bottom: 5px; /* Espaçamento entre os grupos de radio */
+    margin-bottom: 5px;
+    /* Espaçamento entre os grupos de radio */
 }
 
 .radio-label input[type="radio"] {
-    margin-right: 5px; /* Espaço entre o botão de rádio e o texto do rótulo */
-}
-.preco {
-    margin-bottom: 15px;
+    margin-right: 5px;
+    /* Espaço entre o botão de rádio e o texto do rótulo */
 }
 
-.botao {
+.preco {
     margin-top: 10px;
 }
+
+.botaoo {
+    margin-top: 10px;
+    height: 35px;
+    width: 35px;
+    display: block; /* Definir o botão como um bloco */
+    margin-left: auto; /* Centralizar horizontalmente */
+    margin-right: auto; /* Centralizar horizontalmente */
+}
+
 
 .fechar {
     margin-top: 20px;
@@ -169,11 +178,11 @@ header {
 }
 
 .quants {
+    margin: auto;
     border-radius: 10px;
     border-color: rgb(22, 22, 22);
     box-shadow: 2px 2px 2px 0.5px rgb(59, 59, 59);
     width: 50%;
-    margin-left: 42px;
 }
 
 .quants:focus {
